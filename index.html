@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/estilos.css" />
     <title>WeatherApp</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Escreva Sua Cidade"
+          spellcheck="false"
+        />
+
+        <button><img src="public/imgs/search.png" /></button>
+      </div>
+
+      <div class="weather">
+        <img src="public/imgs/rain.png" class="clima-icon" />
+        <h1 class="temp">22°C</h1>
+        <h2 class="cidade">New York</h2>
+
+        <div class="detalhes">
+          <div class="col">
+            <img src="public/imgs/humidity.png" />
+            <div>
+              <span class="humidity"> 50% </span>
+              <span>Humidity</span>
+            </div>
+          </div>
+
+          <div class="col">
+            <img src="public/imgs/wind.png" />
+            <div>
+              <span class="wind"> 15 km/h</span>
+              <span>Wind Speed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
