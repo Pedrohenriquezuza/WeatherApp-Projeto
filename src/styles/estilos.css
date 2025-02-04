@@ -23,7 +23,9 @@
   .search {
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: space-between;
+    gap: 10px; 
+    width: 100%;
   }
   
   .search input {
@@ -36,18 +38,20 @@
     border: none;
     outline: none;
     border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    min-width: 0;
   }
   
   .search button {
     width: 60px;
     height: 60px;
+    flex-shrink: 0; 
+    border-radius: 50%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #ebfffc;
     border: none;
-    border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   }
